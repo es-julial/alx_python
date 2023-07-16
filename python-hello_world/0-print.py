@@ -1,4 +1,2 @@
-print('''
-      "Programming is like building a multilingual puzzle\n
-
-      ''')
+a = """"Programming is like building a multilingual puzzle"""
+print(a + "\n")
