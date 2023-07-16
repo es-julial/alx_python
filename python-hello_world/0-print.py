@@ -1,3 +1,3 @@
-a = '''"Programming is like building a multilingual puzzle'''
-print(a)
+a='"Programming is like building a multilingual puzzle'
+print(f"{a}")
 print()
