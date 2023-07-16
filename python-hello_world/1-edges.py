@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 word = "Holberton"
 middle_word = word[1:-1]
 word_last_2 = word[-2:]
