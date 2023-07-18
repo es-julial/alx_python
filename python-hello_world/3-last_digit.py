@@ -12,4 +12,3 @@ else:
         print(Last_digit, "and is less than 6 and not 0", end="\n")
     else:
         print(-Last_digit, "and is less than 6 and not 0", end="\n")
-        
