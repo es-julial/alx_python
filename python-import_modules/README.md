@@ -1,15 +1,5 @@
 
-
-
-
-    <div id="project_id" style="display: none" data-project-id="2056"></div>
-
-
-
-      
-
-      
-
+ 
       <div class="panel panel-default" id="project-description">
   <div class="panel-body">
     <h2>Resources</h2>
