@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 
-from utils.add_0 import add as add_0
+"""Import a simple function"""
+
+from add_0 import add
 
 a = 1
 b = 2
-print("{} + {} = {}".format(a, b, add_0.add(a, b)), end="\n")
+result = add(a, b)
+
+print("{} + {} = {}".format(a, b, result))
+if __name__ == "__main__":
+    pass
