@@ -2,7 +2,7 @@
 The Square class represents a square with a private instance attribute 'size'.
 It allows instantiation with an optional size,
 and provides methods to calculate the square's area and print the square.
-The size attribute can be accessed using a property 'size' 
+The size attribute can be accessed using a property 'size'
 with a setter for validation.
 
 Example:
@@ -19,6 +19,7 @@ Example:
     # #####
 
 """
+
 
 class Square:
     """A class representing a square.
