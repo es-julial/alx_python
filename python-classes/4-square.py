@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """This module defines a Square class.
 
 The Square class represents a square with a private instance attribute 'size'.
@@ -76,4 +75,3 @@ class Square:
         else:
             for _ in range(self.__size):
                 print("#" * self.__size)
-print()
