@@ -1,9 +1,10 @@
-"""This module defines a Square class.
-
+"""
+This module defines a Square class.
 The Square class represents a square with a private instance attribute 'size'.
-It allows instantiation with an optional size, and provides methods to calculate the square's area and print the square.
-The size attribute can be accessed using a property 'size' with a setter for validation.
-
+It allows instantiation with an optional size, and provides methods to calculate 
+the square's area and print the square.
+The size attribute can be accessed using a property
+'size' with a setter for validation.
 Example:
     # Create a square object with size 5
     square = Square(5)
@@ -16,7 +17,6 @@ Example:
     # #####
     # #####
     # #####
-
 """
 
 class Square:
@@ -39,10 +39,8 @@ class Square:
     @property
     def size(self):
         """Get or set the size of the square.
-
         The size must be an integer, otherwise a TypeError is raised.
         If the size is less than 0, a ValueError is raised.
-
         Returns:
             int: The size of the square.
         """
@@ -59,7 +57,6 @@ class Square:
 
     def area(self):
         """Calculate the area of the square.
-
         Returns:
             int: The area of the square.
         """
@@ -67,7 +64,6 @@ class Square:
 
     def my_print(self):
         """Print the square with the character '#'.
-
         If the size is 0, it prints an empty line.
         """
         if self.__size == 0:
