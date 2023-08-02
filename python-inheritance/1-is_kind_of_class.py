@@ -1,40 +1,18 @@
+"""
+This module checks if an object is instance of a class or a subclass
+"""
 def is_kind_of_class(obj, a_class):
-    """
-    Check if the object is an instance of, or if the object is an instance of a class that inherited from,
-    the specified class.
+    """AI is creating summary for is_kind_of_class
 
     Args:
-        obj: The object to be checked.
-        a_class: The specified class to compare against.
+        obj: the instance/object
+        a_class: a class
 
     Returns:
-        True if the object is an instance of, or if the object is an instance of a class that inherited from,
-        the specified class; otherwise False.
+        True: if bj is instance of the class
+        False: if obj not object of the class 
     """
-    return isinstance(obj, a_class)
-
-
-# Test cases
-a = 1
-print(is_kind_of_class(a, int))  # Output: True
-
-a = True
-print(is_kind_of_class(a, int))  # Output: False
-
-a = 3.14
-print(is_kind_of_class(a, int))  # Output: False
-
-a = True
-print(is_kind_of_class(a, object))  # Output: True
-
-a = None
-print(is_kind_of_class(a, object))  # Output: True
-
-a = None
-print(is_kind_of_class(a, list))  # Output: False
-
-a = [1, 2, 3]
-print(is_kind_of_class(a, list))  # Output: True
-
-a = [1, 2, 3]
-print(is_kind_of_class(a, object))  # Output: True
+    if isinstance(obj, a_class):
+        return True
+    else:
+        return False
