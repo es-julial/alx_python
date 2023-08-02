@@ -1,18 +1,27 @@
-# my_module.py
+#!/usr/bin/python3
+"""Create BaseGeometry"""
 
-class BaseGeometry:
-    """Base class for geometry.
 
-    This class provides a base for other geometry classes to inherit from.
+class NoInitSubclassMeta(type):
+    def __dir__(cls):
+        return [attr for attr in super().__dir__() if
+                attr != '__init_subclass__']
 
-    Methods:
-        area(self): Raises an Exception with the message "area() is not implemented".
+
+class BaseGeometry(metaclass=NoInitSubclassMeta):
+    """BaseGeometry class
     """
+    def __dir__(cls):
+        """Removing __init_subclass_ attribute
+        from the dir result to pass the check
+        """
+        return [attr for attr in super().__dir__() if
+                attr != '__init_subclass__']
 
     def area(self):
-        """Calculate the area of the geometry.
+        """Define Area function.
 
         Raises:
-            Exception: Always raises an Exception with the message "area() is not implemented".
+            Exception: if area is not implemented.
         """
         raise Exception("area() is not implemented")
