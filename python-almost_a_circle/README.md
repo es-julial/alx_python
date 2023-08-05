@@ -1,6 +1,6 @@
 ![Screenshot](https://zupimages.net/up/23/31/3loy.png)
 
-     <div class="panel panel-default" id="project-description">
+<div class="panel panel-default" id="project-description">
   <div class="panel-body">
     <h2>Background Context</h2>
 
