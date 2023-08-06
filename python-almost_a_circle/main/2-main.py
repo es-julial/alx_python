@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 3-main """
+""" 2-main """
 import sys
 sys.path.append("./python-almost_a_circle")
 from models.rectangle import Rectangle
