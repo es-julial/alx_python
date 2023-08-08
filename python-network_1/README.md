@@ -1,3 +1,7 @@
+# Python - Network
+
+![Python - Network](https://img.shields.io/badge/Python-Network-orange)
+
 ![screenshot](https://zupimages.net/up/23/32/s8wc.png)
 
 <div class="panel panel-default" id="project-description">
@@ -67,3 +71,12 @@
 
   </div>
 </div>
+
+
+```bash
+./0-hbtn_status.py
+./1-hbtn_header.py <URL>
+./2-post_email.py <URL> <email>
+./4-error_code.py <URL>
+./5-json_api.py <letter>
+./6-my_github.py <username> <password>
