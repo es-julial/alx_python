@@ -1,21 +1,22 @@
-#!/usr/bin/python3
-"""Fetches the value of the X-Request-Id header from a given URL's response"""
+#!/usr/bin/env python3
+"""
+Module to fetch and display the status of a website.
+"""
 
 import requests
-import sys
 
-def main():
-    """Main function to fetch and display the X-Request-Id header"""
-    if len(sys.argv) != 2:
-        print("Usage: ./1-hbtn_header.py <URL>")
-        sys.exit(1)
-
-    url = sys.argv[1]
+def fetch_hbtn_status():
+    """
+    Fetches and displays the status of https://alu-intranet.hbtn.io/status.
+    """
+    url = 'https://alu-intranet.hbtn.io/status'
     response = requests.get(url)
-    x_request_id = response.headers.get('X-Request-Id')
-
-    if x_request_id is not None:
-        print(x_request_id)
-
+    content_type = type(response.text)
+    content = response.text
+   
+    print("Body response:")
+    print(f"\t- type: {content_type}")
+    print(f"\t- content: {content}")
+   
 if __name__ == "__main__":
-    main()
+    fetch_hbtn_status()
