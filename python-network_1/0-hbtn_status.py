@@ -1,9 +1,22 @@
+#!/usr/bin/env python3
 """
-Make a get request to a webpage
+Module to fetch and display the status of a website.
 """
+
 import requests
 
-response = requests.get('https://alu-intranet.hbtn.io/status')
-print("Body response:")
-print("\t- type: {}\n"
-      "\t- content: {}".format(type(response.text), response.text))
+def fetch_hbtn_status():
+    """
+    Fetches and displays the status of https://alu-intranet.hbtn.io/status.
+    """
+    url = 'https://intranet.hbtn.io/status'
+    response = requests.get(url)
+    content_type = type(response.text)
+    content = response.text
+
+    print("Body response:")
+    print(f"\t- type: {content_type}")
+    print(f"\t- content: {content}")
+
+if __name__ == "__main__":
+    fetch_hbtn_status()
