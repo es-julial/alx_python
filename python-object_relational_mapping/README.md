@@ -2,7 +2,7 @@
 
 ![screenshot](https://zupimages.net/up/23/34/lbb5.png)
 
- ![Static Badge](https://zupimages.net/up/23/33/w7lo.png)
+ ![Static Badge](https://zupimages.net/up/23/34/wsj8.png)
      
 <div class="panel panel-default" id="project-description">
   <div class="panel-body">
