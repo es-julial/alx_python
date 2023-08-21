@@ -6,7 +6,8 @@
 # Wait, do you remember the previous task? Did you test "Arizona';
 # TRUNCATE TABLE states ; SELECT * FROM states WHERE name = '" as an input?
 
-# guillaume@ubuntu:~/$ ./2-my_filter_states.py root root hbtn_0e_0_usa "Arizona';
+# guillaume@ubuntu:~/$
+# ./2-my_filter_states.py root root hbtn_0e_0_usa "Arizona';
 # TRUNCATE TABLE states ; SELECT * FROM states WHERE name = '"
 # (2, 'Arizona')
 # guillaume@ubuntu:~/$ ./0-select_states.py root root hbtn_0e_0_usa
@@ -22,7 +23,8 @@
 # write one that is
 # safe from MySQL injections!
 
-# Your script should take 4 arguments: mysql username, mysql password, database name
+# Your script should take 4 arguments: mysql username, mysql password,
+# database name
 # and state name searched (safe from MySQL injection)
 # You must use the module MySQLdb (import MySQLdb)
 # Your script should connect to a MySQL server running on
