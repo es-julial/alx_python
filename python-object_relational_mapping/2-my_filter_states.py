@@ -9,7 +9,8 @@
 # Your script should take 4 arguments: mysql username, mysql password,
 # database name and state name searched (no argument validation needed)
 # You must use the module MySQLdb (import MySQLdb)
-# Your script should connect to a MySQL server running on localhost at port 3306
+# Your script should connect to a MySQL server running on
+# localhost at port 3306
 # You must use format to create the SQL query with the user input
 # Results must be sorted in ascending order by states.id
 # Results must be displayed as they are in the example below
@@ -20,15 +21,16 @@
 # CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
 # USE hbtn_0e_0_usa;
 # CREATE TABLE IF NOT EXISTS states (
-# id INT NOT NULL AUTO_INCREMENT, 
+# id INT NOT NULL AUTO_INCREMENT,
 # name VARCHAR(256) NOT NULL,
 # PRIMARY KEY (id)
 # );
-# INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
+# INSERT INTO states (name) VALUES ("California"), ("Arizona"),
+# ("Texas"), ("New York"), ("Nevada");
 
 # guillaume@ubuntu:~/$ cat 0-select_states.sql | mysql -uroot -p
-# Enter password: 
-# guillaume@ubuntu:~/$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+# Enter password:
+# g:~/$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 # (2, 'Arizona')
 # guillaume@ubuntu:~/$
 
