@@ -27,7 +27,7 @@
 # ("Texas"), ("New York"), ("Nevada");
 
 # guillaume@ubuntu:~/$ cat 0-select_states.sql | mysql -uroot -p
-# Enter password: 
+# Enter password:
 # guillaume@ubuntu:~/$ ./0-select_states.py root root hbtn_0e_0_usa
 # (1, 'California')
 # (2, 'Arizona')
@@ -38,7 +38,7 @@
 
 # No test cases needed
 
- # //////////////////////////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////////////
 
 """lists all states from the database hbtn_0e_0_usa"""
 
