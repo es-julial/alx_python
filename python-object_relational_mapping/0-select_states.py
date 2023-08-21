@@ -1,4 +1,3 @@
-
 # 0. Get all states
 # mandatory
 
