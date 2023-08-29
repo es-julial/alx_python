@@ -26,7 +26,7 @@
 
 <h4>Recommended YouTube playlist to get you started</h4>
 
-<span href="https://www.youtube.com/embed/videoseries?si=F7-vdjIipfoZVexI&amp;list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH"> Video Here</span>
+<span><a href="https://www.youtube.com/embed/videoseries?si=F7-vdjIipfoZVexI&amp;list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH" title="Video Here"> Video Here</a></span>
 
 <h2>Learning Objectives</h2>
 
