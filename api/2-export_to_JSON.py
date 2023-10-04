@@ -1,29 +1,24 @@
 #!/usr/bin/python3
-"""Exports data in the JSON format"""
+"""fetches information from JSONplaceholder API and exports to JSON"""
+
+from json import dump
+from requests import get
+from sys import argv
+
 
 if __name__ == "__main__":
+    todo_url = "https://jsonplaceholder.typicode.com/user/{}/todos".format(
+        argv[1])
+    name_url = "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
+    todo_result = get(todo_url).json()
+    name_result = get(name_url).json()
 
-    import json
-    import requests
-    import sys
+    todo_list = []
+    for todo in todo_result:
+        todo_dict = {}
+        todo_dict.update({"task": todo.get("title"), "completed": todo.get(
+            "completed"), "username": name_result.get("username")})
+        todo_list.append(todo_dict)
 
-    userId = sys.argv[1]
-    user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
-                        .format(userId))
-    todos = requests.get('https://jsonplaceholder.typicode.com/todos')
-    todos = todos.json()
-
-    todoUser = {}
-    taskList = []
-
-    for task in todos:
-        if task.get('userId') == int(userId):
-            taskDict = {"task": task.get('title'),
-                        "completed": task.get('completed'),
-                        "username": user.json().get('username')}
-            taskList.append(taskDict)
-    todoUser[userId] = taskList
-
-    filename = userId + '.json'
-    with open(filename, mode='w') as f:
-        json.dump(todoUser, f)
+    with open("{}.json".format(argv[1]), 'w') as f:
+        dump({argv[1]: todo_list}, f)
