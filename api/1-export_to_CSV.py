@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""fetche https://intranet.hbtn.io/status"""
+"""fetches information from JSONplaceholder API and exports to CSV"""
 
 from csv import DictWriter, QUOTE_ALL
 from requests import get
@@ -18,7 +18,7 @@ if __name__ == "__main__":
         todo_dict = {}
         todo_dict.update({"user_ID": argv[1], "username": name_result.get(
             "username"), "completed": todo.get("completed"),
-            "task": todo.get("title")})
+                          "task": todo.get("title")})
         todo_list.append(todo_dict)
     with open("{}.csv".format(argv[1]), 'w', newline='') as f:
         header = ["user_ID", "username", "completed", "task"]
